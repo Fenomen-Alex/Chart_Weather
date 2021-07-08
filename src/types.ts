@@ -1,3 +1,8 @@
+export type LatLngType = {
+  lat: number
+  lng: number
+}
+
 export interface Weather {
   lat:             number;
   lon:             number;
