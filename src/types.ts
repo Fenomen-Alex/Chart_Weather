@@ -3,6 +3,13 @@ export type LatLngType = {
   lng: number
 }
 
+export type Dataset = {
+  label: string
+  data: number[]
+  backgroundColor?: string
+  borderColor?: string
+}
+
 export interface Weather {
   lat:             number;
   lon:             number;
