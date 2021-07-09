@@ -62,13 +62,13 @@ const WeatherChart = ({latLng}: { latLng: LatLngType }) => {
           label: 'Highs',
           backgroundColor: '#EC9CAC',
           borderColor: '#EC9CAC',
-          data: data.daily.map((day) => day.temp.max)
+          data: data.daily.map((day) => 5 / 9 * (day.temp.max - 32))
         },
         {
           label: 'Lows',
           backgroundColor: '#9CCAF6',
           borderColor: '#9CCAF6',
-          data: data.daily.map((day) => day.temp.min)
+          data: data.daily.map((day) => 5 / 9 * (day.temp.min - 32))
         }
       ]
     };
